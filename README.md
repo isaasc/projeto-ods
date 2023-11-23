@@ -11,14 +11,20 @@ Projeto que possui como objetivo valorizar a ODS3.
 ## Instruções de instalação e execução
 
 1. **Clone o repositório**
+
     Para iniciar, clone o repositório usando o comando:
     ```
     git clone https://github.com/isaasc/projeto-ods.git
     ```
 
-2. **Vá até a pasta do projeto**
+2. **Vá até a pasta docker do projeto**
 
-    Após isso, use o comando para entrar na pasta do projeto:
+    Use o comando para entrar na pasta do projeto:
+    ```
+    cd projeto-ods
+    ```
+   
+   Após isso, use o comando para entrar na pasta docker do projeto:
     ```
     cd projeto-ods
     ```
