@@ -4,7 +4,7 @@ services:
   app:
     build: .
     ports:
-      - "3000:3000"
+      - '3000:3000'
     depends_on:
       - db
     environment:
@@ -21,4 +21,4 @@ services:
     volumes:
       - ./src/db:/docker-entrypoint-db.d/
     ports:
-      - "3306:3306"
+      - '3306:3306'
