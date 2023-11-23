@@ -1,49 +1,59 @@
 # ODS Project
-Projeto que possui como objetivo valorizar a ODS3.
+
+Projeto para a matéria de Microserviços que possui como objetivo valorizar a ODS3.
+
+### Integrantes
+
+- Gabriel Ribeiro Itagyba RM87098
+- Isabella de Souza Campos RM89244
+- Isabelle Raslosnek Ziteli Panico RM87608
 
 ## Pré-requisitos:
-- Java 17 (SDK zzz);
-- Docker (?);
-- Docker compose;
-- IDE de sua preferência, eu optei pelo IntelliJ;
-- SGBD.
+
+- [Node](https://nodejs.org/en);
+- [Docker desktop](https://docs.docker.com/desktop/install/windows-install/);
+- IDE de sua preferência, eu optei pelo VSCODE;
 
 ## Instruções de instalação e execução
 
 1. **Clone o repositório**
 
-    Para iniciar, clone o repositório usando o comando:
-    ```
-    git clone https://github.com/isaasc/projeto-ods.git
-    ```
+   Para iniciar, clone o repositório usando o comando:
+
+   ```
+   git clone https://github.com/isaasc/projeto-ods.git
+   ```
 
 2. **Vá até a pasta docker do projeto**
 
-    Use o comando para entrar na pasta do projeto:
-    ```
-    cd projeto-ods
-    ```
-   
+   Use o comando para entrar na pasta do projeto:
+
+   ```
+   cd projeto-ods
+   ```
+
    Após isso, use o comando para entrar na pasta docker do projeto:
-    ```
-    cd projeto-ods
-    ```
+
+   ```
+   cd projeto-ods
+   ```
 
 3. **Construa e inicie os containers docker**
 
-    Estando na pasta do projeto, execute o seguinte comando:
-    ```
-    docker-compose up --build
-    ```
+   Estando na pasta do projeto, execute o seguinte comando:
+
+   ```
+   docker-compose up --build
+   ```
 
 4. **Acessando a Aplicação**
 
    Com os containers em execução, a API estará disponível em `http://localhost:3000`. Você pode acessar as rotas definidas no backend através dessa URL.
 
-
 5. **Caso queira parar a Aplicação**
 
    Use o o comando abaixo estando na pasta do projeto:
+
    ```
    docker-compose down
    ```
