@@ -29,7 +29,7 @@ Projeto para a matéria de Microserviços que possui como objetivo valorizar a O
    Use o comando para entrar na pasta docker no projeto:
 
    ```
-   cd .\projeto-ods/backend/docker
+   cd .\projeto-ods/backend
    ```
 
 3. **Construa e inicie os containers docker**
