@@ -26,16 +26,10 @@ Projeto para a matéria de Microserviços que possui como objetivo valorizar a O
 
 2. **Vá até a pasta docker do projeto**
 
-   Use o comando para entrar na pasta do projeto:
+   Use o comando para entrar na pasta docker no projeto:
 
    ```
-   cd projeto-ods
-   ```
-
-   Após isso, use o comando para entrar na pasta docker do projeto:
-
-   ```
-   cd projeto-ods
+   cd .\projeto-ods/backend/docker
    ```
 
 3. **Construa e inicie os containers docker**
@@ -57,6 +51,10 @@ Projeto para a matéria de Microserviços que possui como objetivo valorizar a O
    ```
    docker-compose down
    ```
+
+## Modelagem de Dados
+
+![Modelagem do banco de dados](/img/modelagem-dados-ods.png)
 
 ## Endpoints da API
 
