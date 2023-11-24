@@ -17,7 +17,7 @@ services:
     image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: ods1234
-      MYSQL_DATABASE: root
+      MYSQL_DATABASE: ods
     volumes:
       - ../src/db:/docker-entrypoint-db.d/
     ports:
