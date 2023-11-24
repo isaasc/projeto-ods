@@ -19,6 +19,6 @@ services:
       MYSQL_ROOT_PASSWORD: ods1234
       MYSQL_DATABASE: root
     volumes:
-      - ./src/db:/docker-entrypoint-db.d/
+      - ../src/db:/docker-entrypoint-db.d/
     ports:
       - '3306:3306'
