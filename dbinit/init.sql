@@ -1,6 +1,7 @@
 CREATE DATABASE IF NOT EXISTS micro-ods;
 USE micro-ods;
 
+DROP TABLE IF EXISTS ods;
 CREATE TABLE ods (
     id INT PRIMARY KEY,
     nome VARCHAR(255) NOT NULL
@@ -9,6 +10,7 @@ CREATE TABLE ods (
 INSERT INTO ods (id, nome) VALUES
     (3, 'Objetivo 3: Saúde e Bem-Estar');
 
+DROP TABLE IF EXISTS objetivo;
 CREATE TABLE objetivo (
     id VARCHAR(5) PRIMARY KEY,
     id_ods INT,
@@ -20,6 +22,7 @@ CREATE TABLE objetivo (
 INSERT INTO objetivo (id, id_ods, descricao_global, descricao_brasil) VALUES
     ('3.1', 3, 'Até 2030, reduzir a taxa de mortalidade materna global para menos de 70 mortes por 100.000 nascidos vivos.', 'Até 2030, reduzir a razão de mortalidade materna para no máximo 30 mortes por 100.000 nascidos vivos.');
 
+DROP TABLE IF EXISTS indicador;
 CREATE TABLE indicador (
     id VARCHAR(10) PRIMARY KEY,
     id_objetivo VARCHAR(5),
@@ -27,10 +30,10 @@ CREATE TABLE indicador (
     descricao TEXT,
     FOREIGN KEY (id_objetivo) REFERENCES objetivos(id)
 );
-
 INSERT INTO indicador (id, id_objetivo, nome, descricao) VALUES
     ('3.3.1', '3.1', 'Razão de mortalidade materna', 'Taxa de mortalidade materna (Óbitos por 100.000 nascidos vivos)');
 
+DROP TABLE IF EXISTS indicador_valor;
 CREATE TABLE indicador_valor (
     id INT PRIMARY KEY AUTO_INCREMENT,
     id_indicador VARCHAR(10),

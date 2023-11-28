@@ -11,6 +11,7 @@ Projeto para a matéria de Microserviços que possui como objetivo valorizar a O
 ## Pré-requisitos:
 
 - [Node](https://nodejs.org/en);
+- [Typescript](https://www.typescriptlang.org/download);
 - [Docker desktop](https://docs.docker.com/desktop/install/windows-install/);
 - IDE de sua preferência, eu optei pelo VSCODE;
 
