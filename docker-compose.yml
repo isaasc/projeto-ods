@@ -11,11 +11,10 @@ services:
     expose:
       - 3306
     environment:
-      MYSQL_DATABASE: micro-ods
+      MYSQL_DATABASE: odsdb
       MYSQL_USER: admin
       MYSQL_PASSWORD: ods1234
       MYSQL_ROOT_PASSWORD: ods1234
-      SERVICE_TAGS: prod
     networks:
       - internalnet
 
@@ -23,20 +22,19 @@ services:
     container_name: nodeappcontainer
     build: .
     image: nodeapp:v1
+    environment:
+      DB_HOST: mysqldb
+      DB_USER: 'admin'
+      DB_PASSWORD: 'ods1234'
+      DB_NAME: odsdb
+      DB_PORT: 3306
+      DB_CONNECTION_LIMIT: 10
     ports:
       - 3000:3000
     expose:
       - 3000
     depends_on:
       - mysqldb
-    environment:
-      DB_HOST: mysqldb
-      DB_USER: admin
-      DB_PASSWORD: 'ods1234'
-      DB_NAME: micro-ods
-      DB_PORT: 3306
-      DB_CONNECTION_LIMIT: 10
-      SERVICE_TAGS: prod
     networks:
       - internalnet
 
